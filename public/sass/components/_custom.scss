@@ -1,0 +1,196 @@
+/////////////////////// BASE //////////////////
+@mixin push--auto {
+    margin: { 
+        left: 0 auto;
+        right: 0 auto;
+    }
+}
+
+html {
+    font-size: 100%;
+
+    @media #{$small-and-down} {
+        font-size: 87.5%; //1 rem = 14px, 14/16 = 87.5%
+      }
+      @media #{$medium-and-down} {
+        font-size: 100%; //1rem = 16px, 16/16 = 100%
+
+        .section-1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+      }
+
+      @media #{$large-and-up} {
+        h1 {
+            font-size: 67.773px;
+            letter-spacing: 1px;
+            font-weight: 900;
+        }
+        h2 {
+            font-size: 45.182px;
+            letter-spacing: 1px;
+            font-weight: 900;
+        }
+        h3 {
+            font-size: 38px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        h5 {
+            font-size: 8.925px;
+            letter-spacing: 1px;
+        }
+        h6 {
+            font-size: 5.95px;
+            letter-spacing: 1px;
+        }
+      }
+      @media #{$extra-large-and-up} {
+        font-size: 125%; //1rem = 18, 18/16 = 125%
+      }
+
+      img {
+          max-width: 100%;
+      }
+}
+.uKnow-btn {
+    border-radius: 2rem;
+    background-color: #4A90E2;
+    padding: .8rem 1.1rem;
+    color: #fff;
+    margin-left: 1rem;
+    font-weight: 400;
+    font-size: .8rem;
+    position: relative;
+    top: 1rem;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover { 
+    background-color: $uKnow-font-color;
+    color: $uKnow-color;
+}
+////////////////////////////HOME/////////////////
+.search-bar {
+    width: 40%;
+    height: 75px;
+    transform: translate(0%, -50%);
+    margin: 0 auto;
+}
+.news-title {
+    font-weight: 700;
+}
+.feat-news{
+    margin-top: 3rem;
+    &-img {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2rem;
+    opacity: 1;
+    max-width: 100%;
+    }
+    &-title {
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+    &-para {
+        margin-left: 1rem;
+    }
+    &-card {
+        &-title {
+            font-weight: 600;
+            font-size: .9rem;
+            line-height: 1.35;
+        }
+        &-img {
+            max-width: 50%;
+        }
+        &-link {
+            color: $uKnow-font-color;
+        }
+        &-link:hover {
+            color: $link-color;
+            font-style: normal;
+        }
+    }
+}
+.two {
+    margin-left: 0;
+    margin-right: 1rem;;
+}
+.card-container {
+    margin-top: 2rem;;
+    max-width: 83%;
+}
+.feat-events-img {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2rem;
+    opacity: 1;
+    max-width: 100%;
+}
+.full-vh {
+    min-height: 100vh;
+}
+////////////EPIC UNIVERSE PAGE/////////////////
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 900;
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  .centered h1 {
+    font-weight: 700;
+  }
+  ////////////MARDI GRAS PAGE/////////////////
+  .tabs-container {
+      min-height: 600px;
+      max-width: 50%;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      padding: 2rem;
+      border-radius: 2rem;
+      
+  }
+  .tabs-body {
+      margin-top: 2rem;
+  }
+  .tabs-li {
+      margin-bottom: .8rem;
+  }
+///////////////REVEALING FOOTER//////////////
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    background: transparent linear-gradient(180deg, #1945FF 0%, #000A57 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+footer a {
+    color: #fff;
+}
+
+.pages {
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+}
+

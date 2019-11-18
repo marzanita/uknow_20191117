@@ -1,3 +1,6 @@
+// security
+var wwwhisper = require('connect-wwwhisper');
+
 // dev dependencies
 var browserSync = require('browser-sync');
 
@@ -12,6 +15,8 @@ var dev = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === und
 var morgan = require('morgan');
 
 app.use(morgan('dev'));
+
+app.use(wwwhisper());
 
 // Setup SASS. Recompile .sass files automatically
 app.use(sassMiddleware({

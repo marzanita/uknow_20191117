@@ -16,7 +16,7 @@ var morgan = require('morgan');
 
 app.use(morgan('dev'));
 
-app.use(wwwhisper());
+app.use(wwwhisper(false));
 
 // Setup SASS. Recompile .sass files automatically
 app.use(sassMiddleware({
